@@ -6,6 +6,15 @@ body{
     background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
 }
 
+.title{
+margin-bottom: 20px;
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+color: rgb(2, 31, 31);
+
+}
+
 .game{
     display: flex;
     flex-direction: column;
@@ -26,4 +35,15 @@ body{
    justify-content: center;
     align-items: center;
     background: linear-gradient(109.6deg, rgb(52, 220, 150) 11.2%, rgb(14, 56, 70) 91.1%);
+}
+
+.score{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.computer{
+    margin-left: 30px;
 }
