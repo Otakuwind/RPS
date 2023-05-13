@@ -1,0 +1,29 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+    background: linear-gradient(to right, rgb(52, 232, 158), rgb(15, 52, 67));
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+              
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+     display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+    background: linear-gradient(109.6deg, rgb(52, 220, 150) 11.2%, rgb(14, 56, 70) 91.1%);
+}
