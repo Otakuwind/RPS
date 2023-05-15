@@ -15,12 +15,34 @@ const scissors_div = document.getElementById('scissors');
 
 
 function getComputerchoice (){
-const choices = ['rock', 'paper','scissors'];
-console.log(Math.random);
+const options = ['rock', 'paper','scissors'];
 
+const randomNumber = Math.floor(Math.random() * 3);
+return options[randomNumber]
 }
+
+
 function game(personChoice){
-   
+   const computerChoice = getComputerchoice()
+  switch (personChoice + computerChoice){
+    case "rockscissors": 
+    case "paperrock":
+    case "scissorspaper":
+        console.log("YOU WIN");
+        break;
+
+    case "rockpaper": 
+    case "paperscissors":
+    case "scissorsrock":
+console.log("YOU LOSE");
+break;
+
+case "rockrock": 
+case "paperpaper":
+case "scissorscissors":
+console.log("DRAW");
+
+  }
 }
 function main (){
 
