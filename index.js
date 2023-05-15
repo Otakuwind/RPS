@@ -28,8 +28,11 @@ computer_span.innerText = computer;
 result_div.innerHTML = person + " beats" + computer + ". YOU WIN!:";
 }
 
-function lose (){
-console.log("lost")
+function lose (person, computer){
+computer++;
+playerscore_span.innerHTML = player;
+computer_span.innerText = computer;
+result_div.innerHTML = person + " lose to " + computer + ". YOU LOST!:";
 }
 
 function draw(){
