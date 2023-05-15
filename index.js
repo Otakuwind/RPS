@@ -9,12 +9,19 @@ const rock_div = document.getElementById('rock');
 const paper_div = document.getElementById('paper');
 const scissors_div = document.getElementById('scissors');
 
-function game(personChoice){
-    console.log("  fuck "   + personChoice);
+
+
+
+
+
+function getComputerchoice (){
+const choices = ['rock', 'paper','scissors'];
+console.log(Math.random);
+
 }
-
-
-
+function game(personChoice){
+   
+}
 function main (){
 
     rock_div.addEventListener('click',
