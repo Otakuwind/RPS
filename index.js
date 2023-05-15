@@ -10,7 +10,7 @@ const paper_div = document.getElementById('paper');
 const scissors_div = document.getElementById('scissors');
 
 function game(personChoice){
-    console.log("   "   + personChoice);
+    console.log("  fuck "   + personChoice);
 }
 
 
@@ -23,10 +23,10 @@ function main (){
     })
 
     paper_div.addEventListener('click', function(){
-    game("rock");
+    game("paper");
     })
 
     scissors_div.addEventListener('click', function(){
-    game("rock");})
+    game("scissors");})
 }
 main();
