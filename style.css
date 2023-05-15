@@ -49,17 +49,17 @@ color: rgb(2, 31, 31);
 }
 
 .options{
-padding: 0.8rem;
+    padding: 0.8rem;
     width: 100px;
-    
     outline: none;
-    
     border: none;
     cursor: pointer;
     display: flex;
     justify-content: space-evenly;
     }
 
+
+    
     .rock{
         margin-left: 20px;
         border-radius: 40%;
@@ -67,6 +67,10 @@ padding: 0.8rem;
         padding: 10px;
         background-color: rgb(190, 192, 192);
         font-weight: bolder;
+    }
+    .rock:hover{
+        cursor: pointer;
+        background: rgb(199, 255, 88);
     }
     .paper{
         margin-left: 20px;
@@ -76,7 +80,10 @@ padding: 0.8rem;
         background-color: rgb(190, 192, 192);
         font-weight: bolder;
     }
-
+.paper:hover{
+        cursor: pointer;
+        background:rgb(199, 255, 88);
+    }
 
     .scissors{
         margin-left: 20px;
@@ -85,4 +92,9 @@ padding: 0.8rem;
         padding: 10px;
         background-color: rgb(190, 192, 192);
         font-weight: bolder;
+    }
+
+    .scissors:hover{
+        cursor: pointer;
+        background: rgb(199, 255, 88);
     }
