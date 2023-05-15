@@ -3,7 +3,7 @@ let computer= 0;
 let playerscore_span =document.getElementById('playerscore');
 let computer_span = document.getElementById('computerscore');
 const score_div = document.querySelector('.score');
-const result_div =document.querySelector('.result');
+let result_div =document.querySelector('.result');
 const rock_div = document.getElementById('rock');
 const paper_div = document.getElementById('paper');
 const scissors_div = document.getElementById('scissors');
@@ -21,10 +21,11 @@ return options[randomNumber];
 
 
 
-function win (){
+function win (person, computer){
 player++;
 playerscore_span.innerHTML = player;
 computer_span.innerText = computer;
+result_div.innerHTML = person + " beats" + computer + ". YOU WIN!:";
 }
 
 function lose (){
@@ -44,19 +45,19 @@ function game(personChoice){
     case "rockscissors": 
     case "paperrock":
     case "scissorspaper":
-        win();
+        win(personChoice, computerChoice);
         break;
 
     case "rockpaper": 
     case "paperscissors":
     case "scissorsrock":
-lose();
+lose(personChoice, computerChoice);
 break;
 
 case "rockrock": 
 case "paperpaper":
 case "scissorscissors":
-draw();
+draw(personChoice, computerChoice);
 break;
   }
 }
