@@ -36,7 +36,9 @@ result_div.innerHTML = ". YOU LOSE!";
 }
 
 function draw(){
-console.log("draw")
+playerscore_span.innerHTML = player;
+computer_span.innerHTML = computer++ ;
+result_div.innerHTML = ". DRAW!";
 }
 
 
