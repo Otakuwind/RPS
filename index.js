@@ -24,15 +24,15 @@ return options[randomNumber];
 function win (person, computer){
 player++;
 playerscore_span.innerHTML = player;
-computer_span.innerText = computer;
-result_div.innerHTML = person + " beats" + computer + ". YOU WIN!:";
+computer_span.innerHTML = computer;
+result_div.innerHTML = person + " beats" + " ,"+ computer + ". YOU WIN!:";
 }
 
-function lose (person, computer){
-computer++;
+function lose ( ){
+computer ++;
 playerscore_span.innerHTML = player;
-computer_span.innerText = computer;
-result_div.innerHTML = person + " lose to " + computer + ". YOU LOST!:";
+computer_span.innerHTML = computer++ ;
+result_div.innerHTML = ". YOU LOSE!";
 }
 
 function draw(){
@@ -54,8 +54,9 @@ function game(personChoice){
     case "rockpaper": 
     case "paperscissors":
     case "scissorsrock":
-lose(personChoice, computerChoice);
-break;
+    lose(personChoice, computerChoice);
+
+    break;
 
 case "rockrock": 
 case "paperpaper":
